@@ -4,10 +4,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Welcome</title>
+<title>Scripting Tag</title>
 </head>
 <body>
-	<h1>Hello JSP!!</h1>
-	Hello! Java Server Pages.
+	<%
+		int a=2;
+		int b=3;
+		int sum = a+b;
+		out.println("2+3= "+sum);
+	%>
 </body>
 </html>

@@ -4,10 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Welcome</title>
+<title>Scripting Tag</title>
 </head>
 <body>
-	<h1>Hello JSP!!</h1>
-	Hello! Java Server Pages.
+	<p> Today's date: <%= new java.util.Date() %></p>
 </body>
 </html>

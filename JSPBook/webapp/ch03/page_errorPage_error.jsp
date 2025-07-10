@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Welcome</title>
+<title>Directives Tag</title>
 </head>
 <body>
-	<h1>Hello JSP!!</h1>
-	Hello! Java Server Pages.
+	<h4>errorPage 디렉티브 태그</h4>
+	에러가 발생했습니다.
 </body>
 </html>

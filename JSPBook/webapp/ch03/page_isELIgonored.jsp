@@ -4,10 +4,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Welcome</title>
+<title>Directives Tag</title>
 </head>
 <body>
-	<h1>Hello JSP!!</h1>
-	Hello! Java Server Pages.
+	<%
+		request.setAttribute("RequestAttribute", "request 내장 객체");
+	%>
+	${requestScope.RequestAttribute}
 </body>
 </html>

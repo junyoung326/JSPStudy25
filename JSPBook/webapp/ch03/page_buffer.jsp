@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Welcome</title>
+<title>Directives Tag</title>
 </head>
 <body>
-	<h1>Hello JSP!!</h1>
-	Hello! Java Server Pages.
+	<%@ page buffer="16kb" %>
+	Today is : <%=new java.util.Date() %>
 </body>
 </html>

@@ -4,10 +4,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Welcome</title>
+<title>Directives Tag</title>
 </head>
 <body>
-	<h1>Hello JSP!!</h1>
-	Hello! Java Server Pages.
+	<%@ include file="include02_header.jsp" %>
+	<p>방문해 주셔서 감사합니다.</p>
+	<%@ include file="include02_footer.jsp" %>
+
 </body>
 </html>

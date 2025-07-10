@@ -4,10 +4,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Welcome</title>
+<title>Scripting Tag</title>
 </head>
 <body>
-	<h1>Hello JSP!!</h1>
-	Hello! Java Server Pages.
+	<%! String makeItLower(String data){
+		return data.toLowerCase();
+	}%>
+	<%
+		out.println(makeItLower("Hello World"));
+	%>
 </body>
 </html>

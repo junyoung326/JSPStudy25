@@ -4,10 +4,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Welcome</title>
+<title>Scripting Tag</title>
 </head>
 <body>
-	<h1>Hello JSP!!</h1>
-	Hello! Java Server Pages.
+	<%
+		for(int i=0; i<=10; i++){
+			if (i%2==0)
+				out.println(i+"<br>");
+		}
+	%>
 </body>
 </html>

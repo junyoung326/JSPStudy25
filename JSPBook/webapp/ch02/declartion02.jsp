@@ -4,10 +4,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Welcome</title>
+<title>Scripting Tag</title>
 </head>
 <body>
-	<h1>Hello JSP!!</h1>
-	Hello! Java Server Pages.
+	<%! int sum(int a, int b){
+		return a+b;
+	} %>
+	<%
+		out.println("2+3=" +sum(2,3));
+	%>
+	
 </body>
 </html>

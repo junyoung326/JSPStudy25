@@ -4,29 +4,23 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>scripting.jsp</title></head><body>
-
+<title>Scripting Tag</title>
+</head>
+<body>
 	<h2>Scripting Tag</h2>
-	
-	<%!
-	// 선언문 : 자바변수나 메소드를 정의
-	int count = 3; // 변수선언
-	
-	String makeItLower(String data){ // 메서드 선언
+	<%! int count=3;
+	String makeItLower(String data){
 		return data.toLowerCase();
-	}
-	%>
-
+	} 
+	%> <!-- 선언문 태그를 사용하여 자바 변수와 메소드 정의 -->
 	<%
-	// 스크립틀릿 : 자바 로직을 작성
 		for(int i=1; i<=count; i++){
-			out.println("java server pages " + i + ".<br>");
+			out.println("Java Server Pages " + i + ".<br>");
 		}
-	%>
-
-	<%= makeItLower("Hello World")
-	// 표현문으로 print를 담당한다. (출력)
-	%>
-
+	%> <!-- 스크립틀릿 태그로 자바 로직 코드 작성 -->
+	
+	<%= makeItLower("Hello World") %>
+	
+	
 </body>
 </html>
